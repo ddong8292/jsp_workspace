@@ -14,17 +14,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script>
-
-function regist(){
-	//오라클에 insert 시켜달라고 서버측에 요청하자!!
-	form1.action="/regist";//요청할 서버의 url
-	form1.submit();//전송 행위!! 전송이 일어나는 시점!!
+function change(){
+	
 }
-//이전화면 보여주기!
-function prev(){
-	history.back();
+function del(){
+	
 }
-
+function list(){
+	
+}
 </script>
 </head>
 <body bgcolor="pink">
@@ -40,9 +38,9 @@ function prev(){
 				COMM:		<input type="text" name="comm">
 				DEPTNO:		<input type="text" name="deptno">
 				
-				<input type="button" value="수정" >
-				<input type="button" value="삭제" >
-				<input type="button" value="목록" >
+				<input type="button" value="수정" name="change()">
+				<input type="button" value="삭제" name="del()">
+				<input type="button" value="목록" name="list()">
 			</pre>
 		</div>
 	</form>
