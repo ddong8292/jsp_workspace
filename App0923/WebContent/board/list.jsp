@@ -13,6 +13,10 @@
 	int totalPage=(int)Math.ceil((float)totalRecord/pageSize);
 	int blockSize=10;
 	
+	//힌트:아래의 공식은 이미 위에서 선언된 변수를 조합하면 된다
+	int firstPage=0;//블럭당 for문의 시작 페이지
+	int lastPage=0;//블럭당 for문의 마지막 페이지
+	
 	out.print("현재 페이지는"+currentPage+"<br>");
 	out.print("총 totalRecord 수는"+totalRecord+"<br>");
 	out.print("pageSize는"+pageSize+"<br>");
@@ -133,7 +137,7 @@ img {
 			<td id="paging" height="20" colspan="5" align="center">
 		
 			<a href="/board/list.jsp">◀</a>
-			<%for(int i=1; i<=blockSize;i++){ %>
+			<%for(int i=firstPage; i<=lastPage;i++){ %>
 			<a 
 				<%if(i==currentPage){ %>
 				class="pageNum"
