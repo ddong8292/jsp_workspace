@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script>
+	function regist() {
+	//클라이언트가 전송하게 될 데이터가 문자열이 아닌,
+	//바이너리 파일 수준이므로, 전송방법은 스트림을 지원하는 post방식으로 보내야 한다!!
+	//따라서 post 는 방식 전송 데이터량에 한계가 없다!!
+	form1.action="/upload/upload.jsp";
+	form1.submit();
+	}
+</script>
+</head>
+<body>
+	<form name="form1" method="post" enctype="multipart/form-data">
+		<pre>
+	<!-- //자바분야에서 잘 알려진 업로드 컴포넌트
+			(무료)
+			1.apache 제작된 업로드 컴포넌트
+			
+			2.orellily사에 책편저할때 제작한 컴포넌트
+				Multipart 업로드 컴포넌트 cos.jar
+				www.servlets.com
+	// -->
+	파일명 결정:<input type="text" name="msg">
+	파일선택:<input type="file" name="myFile">
+	
+	<input type="button" value="업로드하기" onClick="regist()">
+	</pre>
+	</form>
+</body>
+</html>

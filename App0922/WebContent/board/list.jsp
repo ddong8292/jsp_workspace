@@ -66,7 +66,7 @@ img{border:0px}
 		    %>
 		    <tr align="center" height="20px" onMouseOver="this.style.background='#FFFF99'" onMouseOut="this.style.background=''">
 			  <td width="50"><%=dto.getBoard_id() %></td>
-			  <td width="303"><a href="detail.jsp"><%=dto.getTitle() %></a></td>
+			  <td width="303"><a href="detail.jsp?board_id=<%=dto.getBoard_id()%>"><%=dto.getTitle() %></a></td>
 			  <td width="100"><%=dto.getWriter() %></td>
 			  <td width="100"><%=dto.getRegdate().substring(0,10) %></td>
 			  <td width="50"><%=dto.getHit() %></td>
