@@ -7,7 +7,6 @@
  * */
 package com.sds.model.board;
 
-import com.sun.javafx.image.impl.ByteIndexed.Getter;
 
 public class BoardDTO {
 	//데이터는 보호해야 한다

@@ -5,7 +5,8 @@
 <% 
 	//클라이언트가 전송한 파라미터와 파일을 넘겨받아 서버의 하드디스크에 적재시지카=업로드
 	//직접개발하지 말고, 외부 라이브러리 이용해보자!
-	String saveDir="C:/jsp_workspace/App0923/WebContent/data";
+	//String saveDir="C:/jsp_workspace/App0923/WebContent/data";
+	String saveDir="/Users/pch/Documents/jsp_workspace/App0923/WebContent/data";
 	int maxSize=2*1024*1024;	
 	request.setCharacterEncoding("utf-8");
 	

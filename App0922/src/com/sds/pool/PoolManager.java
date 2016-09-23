@@ -32,7 +32,7 @@ import java.util.Vector;
 public class PoolManager {
     private Vector connections = new Vector(10);
     private String _driver = "oracle.jdbc.driver.OracleDriver",
-    _url = "jdbc:oracle:thin:@localhost:1521:XE",
+    _url = "jdbc:oracle:thin:@10.211.55.3:1521:XE",
     _user = "java0919",
     _password = "java0919";
     private boolean _traceOn = false;
